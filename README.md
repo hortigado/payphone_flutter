@@ -12,10 +12,7 @@ and the Flutter guide for
 -->
 
 
-<picture>
-  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/portada.png">
-  
-</picture>
+
 <picture>
 
  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/portada.jpeg">
@@ -47,7 +44,7 @@ En menos tiempo que tomar un café. Comienza a cobrar con tarjeta, sin papeleos 
 
 ## Features
 
-# Los datos confidenciales se envían directamente a PAYPHONE en lugar de pasar por su servidor.
+## Los datos confidenciales se envían directamente a PAYPHONE en lugar de pasar por su servidor.
 
 IOS: DISPONIBLE
 ANDROID: DISPONIBLE
