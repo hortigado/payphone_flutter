@@ -13,11 +13,11 @@ and the Flutter guide for
 
 
 
-<picture>
 
- <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/portada.jpeg">
+
+ <img alt="FONLES CIA. LTDA." src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/captura.png">
   
-</picture>
+
 
 
 
@@ -27,7 +27,7 @@ Tus clientes no van a poder creer, lo simple que fue pagarte.
 Y tu tampoco.
 En menos tiempo que tomar un café. Comienza a cobrar con tarjeta, sin papeleos ni comisiones.
 
-# WIDGET IMPLEMENTADO AUTOMÁTICAMENTE.
+## WIDGET IMPLEMENTADO AUTOMÁTICAMENTE.
 
 ## Getting started
 
