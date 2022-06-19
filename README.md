@@ -46,14 +46,14 @@ WEB: DISPONIBLE
 
 ## Requirements
 
-# Android
+## Android
 
 Es necesario minSdkVersion 21
 
-# iOS
+## iOS
 Compatible con aplicaciones dirigidas a iOS 11 o superior.
 
-# WEB
+## WEB
 ¡Ahora puedes usar PAYPHONE con Flutter web! 
 
 
