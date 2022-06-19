@@ -11,8 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-<img src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/portada.png" alt="FONLES CIA. LTDA.">
-![This is an image](https://github.com/Matiasfons/payphone_flutter/blob/main/images/portada.png)
+
 <picture>
   <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/portada.png">
   
