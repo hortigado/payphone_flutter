@@ -18,7 +18,7 @@ and the Flutter guide for
  <img alt="FONLES CIA. LTDA." src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/captura.png">
   
 <a href="https://github.com/Matiasfons/payphone_flutter/blob/main/images/captura.png">
-    <img src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/captura.png" alt="FONLES logo" title="FONLES" align="center" height="60" />
+    <img src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/captura.png" alt="FONLES logo" title="FONLES" align="right" height="60" />
 </a>
 
 
