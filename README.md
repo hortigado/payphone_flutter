@@ -33,7 +33,7 @@ En menos tiempo que tomar un café. Comienza a cobrar con tarjeta, sin papeleos 
 
 1. Debes crear una cuenta BUSINESS en https://appstore.payphonetodoesposible.com/registerini
 
-2. Dirígete a la sección de “Usuarios” a continuación selecciona “Crear Usuario”, ingresa todos los datos del desarrollador en el formulario, no olvides que en el campo “Roles” debes ingresar “Desarrollador”. (El administrador debe entregarel correo electrónico y la contraseña ingresadas)
+2. Dirígete a la sección de “Usuarios” a continuación selecciona “Crear Usuario”, ingresa todos los datos del desarrollador en el formulario, no olvides que en el campo “Roles” debes ingresar “Desarrollador”. (El administrador debe entregarel correo electrónico y la contraseña ingresadas).
 
 3. Ingresa en la página https://appdeveloper.payphonetodoesposible.com/ e inicia sesión con las credenciales de tu usuario desarrollador (Ruc, correo y contraseña).
 

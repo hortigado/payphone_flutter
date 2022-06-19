@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:payphone/src/payphone_flutter_pack.dart';
 
 class ExamplePage extends StatefulWidget {
   ExamplePage({Key? key}) : super(key: key);
