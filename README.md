@@ -65,6 +65,35 @@ Compatible con aplicaciones dirigidas a iOS 11 o superior.
 ¡Ahora puedes usar PAYPHONE con Flutter web! 
 
 
+## Supported
+
+#### Recuerda que solo puedes generar hasta 20 veces por minuto por ahora.
+
+| Nombre | Descripción |Tipo de dato|
+|--|--|--|
+| amount | Valor total de la factura a cobrar, es la suma de amountWithTax y el tax |int|
+| amountWithTax | Valor que si graba impuesto, sin el impuesto incluido. |int|
+| currency | Moneda a cobrar. /ej USD|String|
+| clientTransactionId | Identificador de transacción, debes generarlo, es un identificador único y con una **longitud máxima de 12 caracteres** |String|
+| reference | Referencia del pago que puedes enviar.|String|
+| tax | Valor del impuesto.|int|
+| token | Token generado previamente.|String|
+| width | Ancho del Widget (recomendado el máximo posible)|double|
+| height | Altura del Widget (recomendado el máximo posible)|double|
+| success | Función que se ejecuta cuando el pago se realiza con éxito|Function|
+| cancelled | Función que se ejecuta cuando el pago se cancela, no se puede procesar o expira|Function|
+
+
+### Ejemplo de los datos.
+```dart
+amountWithTax = 100.
+tax = 12.
+amount = tax + amountWithTax = 112.
+clientTransactionId= "123Ejemplo".
+currency = "USD".
+```
+
+
 ## Usage
 
 ```dart
@@ -80,7 +109,6 @@ Compatible con aplicaciones dirigidas a iOS 11 o superior.
           amount: amount,
           tax: tax,
           amountWithTax: amountWithTax,
-          expireIn: expireIn,
           clientTransactionId: clientTransactionId,
           currency: currency,
           reference: reference),
@@ -88,7 +116,12 @@ Compatible con aplicaciones dirigidas a iOS 11 o superior.
   }
 ```
 
+
+## Upcoming features
+
+ - Generar links de pago y compartirlo por WhatsApp, Facebook, Correo, etc.
+
+
 ## Additional information
 
-Plugin creado por Matias Fonseca. CEO EN FONLES CIA. LTDA.
-
+Package created by Matias Fonseca. CEO IN FONLES CIA. LTDA.

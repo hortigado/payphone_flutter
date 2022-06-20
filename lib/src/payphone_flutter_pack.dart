@@ -3,6 +3,7 @@ import 'package:payphone/src/api/api.dart';
 import 'package:webviewx/webviewx.dart';
 
 class PayphoneWidget extends StatefulWidget {
+  // VARIABLES NECESARIAS
   final double width;
   final double height;
   final String token;
@@ -11,10 +12,11 @@ class PayphoneWidget extends StatefulWidget {
   final int amount;
   final int tax;
   final int amountWithTax;
-  final int expireIn;
   final String clientTransactionId;
   final String currency;
   final String reference;
+
+  // CONSTRUCTOR
 
   PayphoneWidget(
       {Key? key,
@@ -26,7 +28,6 @@ class PayphoneWidget extends StatefulWidget {
       required this.amount,
       required this.tax,
       required this.amountWithTax,
-      required this.expireIn,
       required this.clientTransactionId,
       required this.currency,
       required this.reference})
@@ -47,9 +48,12 @@ class _PayphoneWidgetState extends State<PayphoneWidget> {
   }
 
   loadData() async {
+    // Generamos el loading de carga y generamos el link que utilizaremos
+
     setState(() {
       loading = true;
     });
+    // Enviamos los datos
     var response = await generateLinkPayPhone(
         widget.amount,
         widget.tax,
@@ -57,7 +61,6 @@ class _PayphoneWidgetState extends State<PayphoneWidget> {
         widget.clientTransactionId,
         widget.currency,
         widget.reference,
-        widget.expireIn,
         widget.token);
     setState(() {
       link = response;

@@ -20,7 +20,6 @@ class _ExamplePageState extends State<ExamplePage> {
         //     amount: amount,
         //     tax: tax,
         //     amountWithTax: amountWithTax,
-        //     expireIn: expireIn,
         //     clientTransactionId: clientTransactionId,
         //     currency: currency,
         //     reference: reference),

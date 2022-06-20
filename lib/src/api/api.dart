@@ -3,7 +3,7 @@ import 'dart:convert';
 
 //SE GENERA UN LINK DE PAGO CON LA INFORMACIÓN UTILIZANDO LA API DE PAYPHONE Y DEVOLVEMOS LA URL RESULTANTE
 generateLinkPayPhone(amount, tax, amountWithTax, clientTransactionId, currency,
-    reference, expireIn, token) async {
+    reference, token) async {
   var response = await http.post(
       Uri.parse('https://pay.payphonetodoesposible.com/api/Links'),
       headers: {
@@ -17,7 +17,7 @@ generateLinkPayPhone(amount, tax, amountWithTax, clientTransactionId, currency,
         "clientTransactionId": clientTransactionId,
         "currency": currency,
         "reference": reference,
-        "expireIn": expireIn
+        "expireIn": 1
       }));
   var decode = json.decode(response.body);
 
