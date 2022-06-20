@@ -18,7 +18,7 @@ and the Flutter guide for
 
   
 
-![stripe-flutter_cover](https://github.com/Matiasfons/payphone_flutter/blob/main/images/image.png)
+![payphone-flutter_cover](https://github.com/Matiasfons/payphone_flutter/blob/main/images/image.png)
 
 
 
