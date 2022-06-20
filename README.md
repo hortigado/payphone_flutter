@@ -48,9 +48,9 @@ En menos tiempo que tomar un café. Comienza a cobrar con tarjeta, sin papeleos 
 
 ## Los datos confidenciales se envían directamente a PAYPHONE en lugar de pasar por su servidor.
 
-IOS: DISPONIBLE
-ANDROID: DISPONIBLE
-WEB: DISPONIBLE
+- IOS: DISPONIBLE
+- ANDROID: DISPONIBLE
+- WEB: DISPONIBLE
 
 ## Requirements
 
@@ -67,7 +67,7 @@ Compatible con aplicaciones dirigidas a iOS 11 o superior.
 
 ## Supported
 
-#### Recuerda que solo puedes generar hasta 20 veces por minuto por ahora.
+#### Recuerda que solo puedes generar hasta 20 veces por minuto.
 
 | Nombre | Descripción |Tipo de dato|
 |--|--|--|
