@@ -17,9 +17,8 @@ and the Flutter guide for
 
 
   
-<a href="https://github.com/Matiasfons/payphone_flutter/blob/main/images/captura.png">
-    <img src="https://github.com/Matiasfons/payphone_flutter/blob/main/images/captura.png" alt="FONLES logo" title="FONLES" align="center" height="260" />
-</a>
+
+![stripe-flutter_cover](https://github.com/Matiasfons/payphone_flutter/blob/main/images/image.png)
 
 
 
