@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:payphone/src/api/api.dart';
-import 'package:webviewx/webviewx.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class PayphoneWidget extends StatefulWidget {
   // VARIABLES NECESARIAS
@@ -38,7 +38,9 @@ class PayphoneWidget extends StatefulWidget {
 }
 
 class _PayphoneWidgetState extends State<PayphoneWidget> {
-  late WebViewXController webviewController;
+/*   late WebViewXController webviewController; */
+  late WebViewController webViewController;
+
   String link = '';
   bool loading = true;
   @override
@@ -70,6 +72,36 @@ class _PayphoneWidgetState extends State<PayphoneWidget> {
 
   @override
   Widget build(BuildContext context) {
+    webViewController
+      ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      ..setBackgroundColor(const Color(0x00000000))
+      ..setNavigationDelegate(NavigationDelegate(
+        onProgress: (int progress) {
+          // Update loading bar.
+        },
+        onPageStarted: (String url) {},
+        onPageFinished: (String url) {},
+        onWebResourceError: (WebResourceError error) {},
+        onNavigationRequest: (NavigationRequest request) {
+          if (request.url ==
+              "https://pay.payphonetodoesposible.com/PayPhone/Cancelled") {
+            widget.cancelled();
+            print('cancelado');
+          }
+          if (request.url.split('Result?')[0].toString() ==
+              "https://pay.payphonetodoesposible.com/Direct/") {
+            widget.success();
+            print('pagado');
+          }
+          if (request.url.split('/')[4].toString() == "Expired") {
+            widget.cancelled();
+
+            print('Expirado');
+          }
+          return NavigationDecision.navigate;
+        },
+      ))
+      ..loadRequest(Uri.parse(link));
     return Container(
       child: loading == true
           ? Container(
@@ -91,36 +123,37 @@ class _PayphoneWidgetState extends State<PayphoneWidget> {
                 ),
               ),
             )
-          : WebViewX(
-              initialContent: link,
-              initialSourceType: SourceType.url,
-              onWebViewCreated: (controller) => webviewController = controller,
-              height: widget.height,
-              width: widget.width,
-              navigationDelegate: (navigation) {
-                if (navigation.content.source.characters.string ==
-                    "https://pay.payphonetodoesposible.com/PayPhone/Cancelled") {
-                  widget.cancelled();
-                  print('cancelado');
-                }
-                if (navigation.content.source.characters.string
-                        .split('Result?')[0]
-                        .toString() ==
-                    "https://pay.payphonetodoesposible.com/Direct/") {
-                  widget.success();
-                  print('pagado');
-                }
-                if (navigation.content.source.characters.string
-                        .split('/')[4]
-                        .toString() ==
-                    "Expired") {
-                  widget.cancelled();
+          : WebViewWidget(controller: webViewController),
+      /*   WebViewX(
+        initialContent: link,
+        initialSourceType: SourceType.url,
+        onWebViewCreated: (controller) => webviewController = controller,
+        height: widget.height,
+        width: widget.width,
+        navigationDelegate: (navigation) {
+          if (navigation.content.source.characters.string ==
+              "https://pay.payphonetodoesposible.com/PayPhone/Cancelled") {
+            widget.cancelled();
+            print('cancelado');
+          }
+          if (navigation.content.source.characters.string
+                  .split('Result?')[0]
+                  .toString() ==
+              "https://pay.payphonetodoesposible.com/Direct/") {
+            widget.success();
+            print('pagado');
+          }
+          if (navigation.content.source.characters.string
+                  .split('/')[4]
+                  .toString() ==
+              "Expired") {
+            widget.cancelled();
 
-                  print('Expirado');
-                }
-                return NavigationDecision.navigate;
-              },
-            ),
+            print('Expirado');
+          }
+          return NavigationDecision.navigate;
+        },
+      ), */
     );
   }
 }

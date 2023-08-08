@@ -10,7 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  webviewx: ^0.2.2
+  #webviewx: ^0.2.2
+  webview_flutter: ^4.2.2
   http: ^0.13.4
 
 dev_dependencies:
