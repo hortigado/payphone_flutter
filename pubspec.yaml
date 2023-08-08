@@ -1,6 +1,6 @@
 name: payphone
 description: Método de pago seguro usando PAYPHONE de forma directa y sin complicaciones.
-version: 1.0.8
+version: 1.0.9
 homepage: https://github.com/Matiasfons/payphone_flutter
 
 environment:
